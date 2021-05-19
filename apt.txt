@@ -1,3 +1,4 @@
 libgl1-mesa-glx
 libxcb-randr0
 x11-xserver-utils
+xauth
