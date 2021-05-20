@@ -7,7 +7,7 @@ RUN apt update && apt -yq dist-upgrade \
     openssh-client \
     vim \
     curl \
-    gcc \
+    gcc
 
 # Xvfb
 RUN apt install -yq --no-install-recommends \
