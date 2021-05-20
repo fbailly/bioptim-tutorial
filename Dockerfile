@@ -1,5 +1,22 @@
 FROM jupyter/minimal-notebook:latest
 
+USER root
+
+RUN apt update && apt -yq dist-upgrade \
+    && apt install -yq --no-install-recommends \
+    openssh-client \
+    vim \
+    curl \
+    gcc \
+
+# Xvfb
+RUN apt install -yq --no-install-recommends \
+    xvfb \
+    x11-utils \
+    libx11-dev \
+    qt5-default \
+    && apt clean
+    
 ENV DISPLAY=:99
 
 # Switch to notebook user
