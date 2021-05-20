@@ -1,4 +1,4 @@
-FROM jupyter/minimal-notebook:6c91f60f69e7
+FROM jupyter/minimal-notebook:latest
 
 ENV DISPLAY=:99
 
