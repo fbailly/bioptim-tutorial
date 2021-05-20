@@ -3,7 +3,8 @@
 if [ -z "$VNC_PASSWORD" ]; then
 	echo >&2 'error: No password for VNC connection set.'
 	echo >&2 '  Did you forget to add -e VNC_PASSWORD=... ?'
-	exit 1
+	VNC_PASSWORD=pwd
+	#exit 1
 fi
 
 if [ -z "$XFB_SCREEN" ]; then
