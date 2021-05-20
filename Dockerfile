@@ -1,3 +1,5 @@
+FROM jupyter/minimal-notebook:6c91f60f69e7
+
 ENV DISPLAY=:99
 
 # Switch to notebook user
